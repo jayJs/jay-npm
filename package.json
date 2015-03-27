@@ -1,14 +1,10 @@
 {
-  "name": "jay",
+  "name": "jay-npm",
   "description": "NPM module for Jay",
   "version": "0.4.17",
   "homepage": "https://github.com/jayJs/jay-npm",
   "private": false,
-  "author": {
-    "name": "Martin Sookael",
-    "email": "m@multiverse.im",
-    "url": "www.martin.ee"
-  },
+  "author": "Martin Sookael <m@multiverse.im> (www.martin.ee)",
   "repository": {
     "type": "git",
     "url": "git@github.com:jayJs/jay-npm.git"
@@ -23,5 +19,9 @@
   },
   "bugs": {
     "url": "https://github.com/jayJs/jay-npm/issues"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }
