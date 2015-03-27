@@ -1,0 +1,27 @@
+{
+  "name": "Jay",
+  "description": "NPM module for Jay",
+  "version": "0.4.17",
+  "homepage": "https://github.com/jayJs/jay-npm",
+  "private": false,
+  "author": {
+    "name": "Martin Sookael",
+    "email": "m@multiverse.im",
+    "url": "www.martin.ee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jayJs/jay-npm.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "kaiseki": "~0.5.6",
+    "multiparty": "~4.1.1"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/jayJs/jay-npm/issues"
+  }
+}
