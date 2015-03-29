@@ -13,13 +13,13 @@ Authentication based on FB SDK and jwt-simle tokens.
 ```
 npm install jay-npm  
 ```
-Copy default_config.js to config.js and fill it with correct credidentials.  
+Copy (default_config.js)[https://github.com/jayJs/node-jay/blob/master/default_config.js] to config.js in your root foler and fill it with correct credidentials.  
 In order for everything to work properly Facebook app and parse.com credidentials are required.  
 Set config.jwtSimple.secret into a string of your own choice.  
 
 **USAGE**  
-Jay frontend component calls "/api/j" for GET and POST calls.  
-Jay-npm helps to repsond to these calls. This is an example of receiving and replying with an Express server.
+Jay front end component calls "/api/j" for GET and POST calls.  
+Jay-npm helps to respond to these calls. This is an example of receiving and replying with an Express server.
 
 ```
 var Jay = require('jay-npm');
@@ -67,12 +67,12 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
 
 **Licence**  
 
-The MIT License (MIT)
+The MIT License (MIT)  
 
-Copyright (c) 2015 Martin Sookael
+Copyright (c) 2015 Martin Sookael  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
