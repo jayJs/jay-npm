@@ -27,7 +27,7 @@ app.get('/api/j', function(req, res){
     res.json(data);
   });
 });
-```
+```  
 Please note that for this sample also express needs to be installed.  
 Check out [Node-Jay](https://github.com/jayJs/node-jay/blob/master/app.js) for a complete example.  
 
