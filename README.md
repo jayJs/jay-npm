@@ -8,7 +8,7 @@ Use [Node-Jay](https://github.com/jayJs/node-jay) as sample of usage.
 Database via Kaiseki and Parse.com.
 Authentication based on FB SDK and jwt-simle tokens.  
 
-##INSTALLATION  
+**INSTALLATION**  
 (Assuming you have npm installed)  
 ```
 npm install jay-npm  
@@ -17,7 +17,7 @@ Copy default_config.js to config.js and fill it with correct credidentials.
 In order for everything to work properly Facebook app and parse.com credidentials are required.  
 Set config.jwtSimple.secret into a string of your own choice.  
 
-##USAGE  
+**USAGE**  
 Jay frontend component calls "/api/j" for GET and POST calls.  
 Jay-npm helps to repsond to these calls. This is an example of receiving and replying with an Express server.   ```
 var Jay = require('jay-npm');
@@ -31,11 +31,11 @@ app.get('/api/j', function(req, res){
 Please note that for this sample also express needs to be installed.  
 Check out [Node-Jay](https://github.com/jayJs/node-jay/blob/master/app.js) for a complete example.  
 
-##API  
-##FB SDK Authentication  
+**API**  
+**FB SDK Authentication**  
 Facebook SDK is added and used for authentication.  
 
-##ensureAuthenticated  
+**ensureAuthenticated**  
 Compares users token with server token. If match is found the functions is fired, else error message is returned with response.  
 ```
 app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
@@ -44,14 +44,14 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
   })
 });
 ```
-##get  
+**get**  
 Retrieves data from Parse.com and returns as object.  
 ```
 Jay.get(req, res, function(data){
   res.json(data);
 });
 ```
-##post  
+**post**  
 Parses your formdata and saves it to Parse.com.
 If files are added, they are separately uploaded to Parse and added to the object.  
 Returns ObjectId.  
@@ -63,7 +63,7 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
 });
 ```
 
-##Licence  
+**Licence**  
 
 The MIT License (MIT)
 
