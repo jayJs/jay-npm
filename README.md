@@ -19,7 +19,8 @@ Set config.jwtSimple.secret into a string of your own choice.
 
 **USAGE**  
 Jay frontend component calls "/api/j" for GET and POST calls.  
-Jay-npm helps to repsond to these calls. This is an example of receiving and replying with an Express server.   ```
+Jay-npm helps to repsond to these calls. This is an example of receiving and replying with an Express server.
+```
 var Jay = require('jay-npm');
 
 app.get('/api/j', function(req, res){
