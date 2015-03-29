@@ -1,10 +1,10 @@
 {
   "name": "jay-npm",
   "description": "NPM module for Jay",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "homepage": "https://github.com/jayJs/jay-npm",
   "private": false,
-  "author": "Martin Sookael <m@multiverse.im> (www.martin.ee)",
+  "author": "Martin Sookael <m@multiverse.im>",
   "repository": {
     "type": "git",
     "url": "git@github.com:jayJs/jay-npm.git"
