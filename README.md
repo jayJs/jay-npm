@@ -13,7 +13,7 @@ Authentication based on FB SDK and jwt-simle tokens.
 ```
 npm install jay-npm  
 ```
-Copy (default_config.js)[https://github.com/jayJs/node-jay/blob/master/default_config.js] to config.js in your root foler and fill it with correct credidentials.  
+Copy [default_config.js](https://github.com/jayJs/node-jay/blob/master/default_config.js) to config.js in your root foler and fill it with correct credidentials.  
 In order for everything to work properly Facebook app and parse.com credidentials are required.  
 Set config.jwtSimple.secret into a string of your own choice.  
 
