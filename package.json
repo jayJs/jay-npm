@@ -1,7 +1,7 @@
 {
   "name": "jay-npm",
   "description": "NPM module for Jay",
-  "version": "0.4.19",
+  "version": "0.5.1",
   "homepage": "https://github.com/jayJs/jay-npm",
   "private": false,
   "author": "Martin Sookael <m@multiverse.im> (www.martin.ee)",
@@ -12,7 +12,9 @@
   "main": "./index.js",
   "dependencies": {
     "kaiseki": "~0.5.6",
-    "multiparty": "~4.1.1"
+    "multiparty": "~4.1.1",
+    "fb": "^0.7.0",
+    "jwt-simple": "^0.2.0"
   },
   "engines": {
     "node": "*"
