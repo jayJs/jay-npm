@@ -36,6 +36,7 @@ Check out [Node-Jay](https://github.com/jayJs/node-jay/blob/master/app.js) for a
 **API**  
 **FB SDK Authentication**  
 Facebook SDK is added and used for authentication.  
+Greetings for [AndrusAsumets](https://github.com/AndrusAsumets) for help with this.
 
 **ensureAuthenticated**  
 Compares users token with server token. If match is found the functions is fired, else error message is returned with response.  
