@@ -18,7 +18,7 @@ In order for everything to work properly Facebook app and parse.com credentials 
 Set config.jwtSimple.secret into a string of your own choice.  
 
 **USAGE**  
-Jay front end component calls "/api/j" for GET and POST calls.  
+Jay front end component calls "/api/j" for GET and POST (JSONP) calls.  
 Jay-npm helps to respond to these calls. This is an example of receiving and replying with an Express server.
 
 ```
@@ -26,7 +26,7 @@ var Jay = require('jay-npm');
 
 app.get('/api/j', function(req, res){
   Jay.get(req, res, function(data){
-    res.json(data);
+    res.jsonp(data);
   });
 });
 ```  
@@ -43,7 +43,7 @@ Compares users token with server token. If match is found the functions is fired
 ```
 app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
   Jay.post(req, res, function(data){
-    res.json(data);
+    res.jsonp(data);
   })
 });
 ```
@@ -51,7 +51,7 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
 Retrieves data from Parse.com and returns as object.  
 ```
 Jay.get(req, res, function(data){
-  res.json(data);
+  res.jsonp(data);
 });
 ```
 **post**  
@@ -61,7 +61,7 @@ Returns ObjectId.
 ```
 app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
   Jay.post(req, res, function(data){
-    res.json(data);
+    res.jsonp(data);
   })
 });
 ```
