@@ -65,6 +65,16 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
   })
 });
 ```
+**put**  
+Updates the post.  
+Returns ObjectId.  
+```
+app.put('/api/j', function(req, res){
+  Jay.put(req, res, function(data){
+    res.jsonp(data);
+  })
+});
+```
 
 **Licence**  
 
