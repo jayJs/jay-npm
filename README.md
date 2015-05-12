@@ -16,7 +16,8 @@ npm install jay-npm
 Copy [default_config.js](https://github.com/jayJs/node-jay/blob/master/default_config.js) to config.js in your root folder and fill it with correct credentials.  
 In order for everything to work properly Facebook app and parse.com credentials are required.  
 Set config.jwtSimple.secret into a string of your own choice.  
-
+Currently the config files are passed as function element.  
+  
 **USAGE**  
 Jay front end component calls "/api/j" for GET and POST (JSONP) calls.  
 Jay-npm helps to respond to these calls. This is an example of receiving and replying with an Express server.
@@ -25,7 +26,7 @@ Jay-npm helps to respond to these calls. This is an example of receiving and rep
 var Jay = require('jay-npm');
 
 app.get('/api/j', function(req, res){
-  Jay.get(req, res, function(data){
+  Jay.get(req, res, config, function(data){
     res.jsonp(data);
   });
 });
@@ -42,7 +43,7 @@ Greetings for [AndrusAsumets](https://github.com/AndrusAsumets) for help with th
 Compares users token with server token. If match is found the functions is fired, else error message is returned with response.  
 ```
 app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
-  Jay.post(req, res, function(data){
+  Jay.post(req, res, config, function(data){
     res.jsonp(data);
   })
 });
@@ -50,7 +51,7 @@ app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
 **get**  
 Retrieves data from Parse.com and returns as object.  
 ```
-Jay.get(req, res, function(data){
+Jay.get(req, res, config, function(data){
   res.jsonp(data);
 });
 ```
@@ -60,7 +61,7 @@ If files are added, they are separately uploaded to Parse and added to the objec
 Returns ObjectId.  
 ```
 app.post('/api/j', Jay.ensureAuthenticated, function(req, res){
-  Jay.post(req, res, function(data){
+  Jay.post(req, res, config, function(data){
     res.jsonp(data);
   })
 });
@@ -70,7 +71,7 @@ Updates the post.
 Returns ObjectId.  
 ```
 app.put('/api/j', function(req, res){
-  Jay.put(req, res, function(data){
+  Jay.put(req, res, config, function(data){
     res.jsonp(data);
   })
 });
