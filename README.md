@@ -17,7 +17,7 @@ Copy [default_config.js](https://github.com/jayJs/node-jay/blob/master/default_c
 In order for everything to work properly Facebook app and parse.com credentials are required.  
 Set config.jwtSimple.secret into a string of your own choice.  
 Currently the config files are passed as function element.  
-  
+
 **USAGE**  
 Jay front end component calls "/api/j" for GET and POST (JSONP) calls.  
 Jay-npm helps to respond to these calls. This is an example of receiving and replying with an Express server.
@@ -74,6 +74,17 @@ app.put('/api/j', function(req, res){
   Jay.put(req, res, config, function(data){
     res.jsonp(data);
   })
+});
+```
+
+**query**  
+Query for data.  
+Front end comes with this: query(table, limit, key, value, order).  
+```
+app.get('/api/j/query', function(req, res){
+  Jay.query(req, res, config, function(data){
+    res.jsonp(data);
+  });
 });
 ```
 
