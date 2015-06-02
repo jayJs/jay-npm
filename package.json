@@ -14,6 +14,8 @@
     "kaiseki": "~0.5.6",
     "multiparty": "~4.1.1",
     "fb": "^0.7.0",
+    "image-size": "^0.3.5",
+    "jimp": "^0.2.4",
     "jwt-simple": "^0.2.0"
   },
   "engines": {
