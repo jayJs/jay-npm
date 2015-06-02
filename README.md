@@ -88,6 +88,16 @@ app.get('/api/j/query', function(req, res){
 });
 ```
 
+**thumbnails**
+*alfa*
+Add this to config to create thumbnails:
+```
+config.thumbnails = {}
+config.thumbnails.enabled = false;
+config.thumbnails.quality = 20;
+```
+
+
 **Licence**  
 
 The MIT License (MIT)  
