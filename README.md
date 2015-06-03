@@ -87,12 +87,13 @@ app.get('/api/j/query', function(req, res){
   });
 });
 ```
-  
+
 **protectedCallback()**  
 All callbacks to and from Jay are protected with a check to make sure the headers are not already sent.  
 
 **thumbnails**
 *alfa*
+Thumbnails are currently created to your server, so Heroku might not be a good choice for this, because it's ephemeral file system (deletes everything that is not added to your git at least once every 24 h).
 Add this to config to create thumbnails:
 ```
 config.thumbnails = {}
