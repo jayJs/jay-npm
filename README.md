@@ -87,6 +87,9 @@ app.get('/api/j/query', function(req, res){
   });
 });
 ```
+  
+**protectedCallback()**  
+All callbacks to and from Jay are protected with a check to make sure the headers are not already sent.  
 
 **thumbnails**
 *alfa*

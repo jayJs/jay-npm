@@ -1,7 +1,7 @@
 {
   "name": "jay-npm",
   "description": "NPM module for Jay",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "homepage": "https://github.com/jayJs/jay-npm",
   "private": false,
   "author": "Martin Sookael <m@multiverse.im>",
