@@ -77,6 +77,17 @@ app.put('/api/j', function(req, res){
 });
 ```
 
+**delete**  
+Deletes the post.  
+Returns ObjectId.  
+```
+app.delete('/api/j', function(req, res){
+  Jay.delete(req, res, config, function(data){
+    res.jsonp(data);
+  })
+});
+```
+
 **query**  
 Query for data.  
 Front end comes with this: query(table, limit, key, value, order).  
