@@ -12,12 +12,14 @@ Authentication based on FB SDK and jwt-simle tokens.
 (Assuming you have npm installed)  
 ```
 npm install jay-npm  
+```  
+Set your settings at config.js. It also accepts process.env variables so you can run it like this:  
 ```
-Copy [default_config.js](https://github.com/jayJs/node-jay/blob/master/default_config.js) to config.js in your root folder and fill it with correct credentials.  
-In order for everything to work properly Facebook app and parse.com credentials are required.  
-Set config.jwtSimple.secret into a string of your own choice.  
-Currently the config files are passed as function element.  
-
+PARSEID='myParseId' PARSEKEY='MyParseRESTAPIKey' node app.js
+```
+In order for everything to work properly Facebook app and parse.com credentials are required.    
+Set config.jwtSimple.secret into a string of your own choice.    
+  
 **USAGE**  
 Jay front end component calls "/api/j" for GET and POST (JSONP) calls.  
 Jay-npm helps to respond to these calls. This is an example of receiving and replying with an Express server.
